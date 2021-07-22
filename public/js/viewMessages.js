@@ -12,12 +12,13 @@ const getMessages = () => {
         const data = snapshot.val()
 
         for(let key in data){
-            console.log(key, data[key])
-            if(key === passcode.value){
+            //console.log(key, data[key])
+            console.log("current passcode:", data[key].passcode)
+            if(data[key].passcode === passcode.value){
                 matchFound = true
                 console.log("match found")
-                
-                message.innerHTML = data[key]
+                message.style = "color: black;"
+                message.innerHTML = data[key].message
                 
             }
         }
