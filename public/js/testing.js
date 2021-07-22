@@ -1,4 +1,5 @@
-console.log("write")
+console.log("Testing")
+
 const onSubmit = () => {
     const passcodeInput = document.querySelector("#passcode").value
     const messageInput = document.querySelector("#message").value
